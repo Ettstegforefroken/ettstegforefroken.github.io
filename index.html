@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ett steg före fröken</title>
+<link rel="icon" href="/logga.jpg"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap">
+<style>
+/* Layout: one narrow reading column, two policy sections, Swedish first with English below each */
+:root {
+  --bg: #f3f7fb; --surface: #ffffff; --fg: #0b2140; --muted: #4f6380; --accent: #1a6fd1; --line: #d8e2ee;
+  --display: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
+  --body: "Nunito", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0d1726; --surface: #142235; --fg: #eaf1fa; --muted: #a3b4ca; --accent: #6fb0ff; --line: #24364e; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0d1726; --surface: #142235; --fg: #eaf1fa; --muted: #a3b4ca; --accent: #6fb0ff; --line: #24364e; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 1rem/1.6 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width: 40rem; margin: 0 auto; padding-block: 32px 48px; display: grid; gap: 28px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.2; text-wrap: balance; margin: 0; }
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.35rem; color: var(--accent); }
+h3 { font-size: 1rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2rem; display: grid; gap: 4px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px; }
+nav a { color: var(--accent); font-weight: 700; }
+section { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 18px; display: grid; gap: 12px; scroll-margin-top: 16px; }
+.en { border-top: 1px solid var(--line); padding-top: 12px; display: grid; gap: 10px; }
+.meta { color: var(--muted); font-size: .95rem; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+</style>
+</head><body><main>
+<header style="display:grid;gap:8px"><a href="/" style="color:inherit;text-decoration:none"><h1>Ett steg före fröken</h1></a>
+<p class="meta">Faktapodd för nyfikna barn. Senast uppdaterad 29 oktober 2026.</p>
+<nav><a href="/integritet/">Integritetspolicy / Privacy policy</a><a href="/villkor/">Villkor / Terms of service</a></nav></header>
+<section><img src="/logga.jpg" alt="Ett steg före fröken" style="width:160px;border-radius:16px">
+<p>Faktapodd för nyfikna barn. Nya avsnitt varje måndag, onsdag och fredag, där poddar finns.</p>
+<p lang="en">A Swedish fact podcast for curious children. New episodes every Monday, Wednesday and Friday.</p></section>
+</main></body></html>
