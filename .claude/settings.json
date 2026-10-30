@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /mnt/project-files/automatisering)",
+      "Bash(python3 sociala_medier.py --publicera:*)",
+      "Bash(sed:*)"
+    ]
+  }
+}
